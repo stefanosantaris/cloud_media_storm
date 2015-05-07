@@ -2,7 +2,7 @@ About
 
 ===============================================================================
 
-This is a Java implementation of the CDVC Media Storms framework, presented in "D. Rafailidis, S. Antaris and Yannis Manolopoulos , Processing Media Storms in the Cloud based on Image Descriptors’ Dimensions Value Cardinalities [Experiments & Analysis Mini Paper]". The source code reproduces the experiments described in our paper.
+This is a Java implementation of the CDVC Media Storms framework, presented in "D. Rafailidis and S. Antaris, Indexing Media Storms in the Cloud based on Image Descriptors’ Dimensions Value Cardinalities, 24th ACM International Conference on Information and Knowledge Management (CIKM2015)". The source code reproduces the experiments described in our paper.
 
 
 Datasets
