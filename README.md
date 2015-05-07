@@ -21,12 +21,19 @@ Our framework was implemented using the OpenStack Apis specifications in order t
 In our repository, we provide the source code of the proposed CDVC Media Storms framework. In order to run our code, the following steps are required:
 
 1) download and install the OpenStack API in your computer;
+
 2) install your certificates into the Cloud Infrastructure;
+
 3) create the HBase configuration which will be used by each of our framework’s components. The HBase configuration should be included either as a separate cfg file (hbs.cfg) or it should be embedded into the experiment.cfg;
+
 4) create the RabbitMQ configuration. Similar to the HBase configuration, the RabbitMQ configuration should be included either as a separate cfg file (rbmq.cfg) or it should be embedded into the experiment.cfg;
+
 5) create the Openstack Deployment projects for each of our framework's components. Each component is deployed to the Openstack compute node; 
+
 6) modify the numberOfDVCExtractorNodes variable in the experiment.cfg according to the deployed instances of the DVC Extractor instances; 
+
 7) modify the numberOfImageSorterNodes variable in the experiment.cfg according to the deployed instances of the Image Sorte instances;
+
 8) if the numberOfDVCExtractorNodes and numberOfImageSorterNodes variables are assigned as 0, then the sequential approach is executed.
 
 We provide in our repository a CDVC_STORM_Initializer project which is the user interface of our framework. CDVC_STORM_Initializer should not deployed to the cloud but it should include the Openstack libraries, since it interacts with the Cloud infrastructure. Since the framework's components are deployed to the cloud, you need to execute the CDVC_STORM_Initializer to run our experiments.
